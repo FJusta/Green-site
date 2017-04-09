@@ -1,0 +1,778 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans')
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab')
+@import url('https://fonts.googleapis.com/css?family=Lato')
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css')
+
+$opens: 'Open Sans', sans-serif
+$robot: 'Roboto Slab', sans-serif
+$lato: 'Lato', sans-serif
+
+$green: #43a906
+$dark-grey: #3e3e3e
+$grey: #646464
+$elephant: #c4c4c4
+$black: #222
+$white: #FFF
+$border: #e9e9e9
+$button: #f6f6f6
+$but-col: #6a6b6a
+$touch: #eee
+$input: #d4d4d4
+$colin: #696969
+
+* 
+    box-sizing: border-box
+
+body
+    margin: 0
+    font-family: $opens
+
+.container
+    width: 100%
+    max-width: 1200px
+    margin: auto
+
+section
+    padding-top: 80px
+
+    &.hero,
+    &.volunteer,
+    &.help,
+    &.sponsor
+        padding-top: 0
+
+    &.help,
+    &.volunteer,
+    &.achievement
+        margin-top: 100px
+
+.col-achieve
+  width: 20%
+  float: left
+
+.contact
+    background: $touch
+    height: 48px
+    padding: 12px 0
+
+    i
+        color: $grey
+        font-size: 15px
+        display: inline
+    
+    p
+        color: $grey
+        font-size: 12px
+        display: inline
+
+.address
+    padding-left: 25px
+
+.social-media
+    a
+        text-decoration: none
+
+    i
+        &.fa
+            font-size: 12px
+            padding-left: 15px
+            cursor: pointer
+
+        &.fa-twitter
+            font-size: 13px
+
+        &.fa:hover
+            color: $green
+            transition: .6s
+
+    text-align: right
+    padding: 0 25px
+
+.separator
+    color: $grey
+    padding: 0 10px 0 12px
+
+nav 
+    height: 105px
+    font-family: $robot
+    background: white
+    font-size: 0
+    
+.navigation
+    float: right
+    text-align: right
+    padding-right: 5px
+
+    ul
+        margin: 0
+        padding: 0
+
+        li
+            display: inline-block
+            padding: 0 20px
+            height: 105px
+            &:hover
+                border-bottom: 5px solid $green
+                transition: .6s
+                
+            &last-child
+                padding-right: 15px
+
+            a
+                text-decoration: none
+                text-transform: uppercase
+                display: block
+                font-size: 14px
+                color: $dark-grey
+                font-weight: 700
+                height: 105px
+                padding-top: 43px
+                &:hover
+                    color: $green
+                    transition: .6s
+                
+.logo
+    font-weight: 700
+    color: $dark-grey
+    padding-left: 25px
+    position: relative
+
+.green 
+    p 
+        font-size: 29px
+        margin: 0
+        position: absolute
+        top: 33px
+
+.leaf
+    i.fa
+        color: $green
+        font-size: 26px
+        
+.left-leaf
+    position: absolute
+    left: 28px
+    top: 19px
+
+.right-leaf
+    position: absolute
+    left: 55px
+    top: 18px
+
+.hero 
+    ul
+        margin: 0
+        padding: 0
+
+        li
+            list-style-type: none
+
+.caption 
+    font-family: $lato
+    margin-bottom: 100px
+    text-transform: uppercase
+    
+    h2
+        font-size: 40px
+        font-weight: 400
+        line-height: 40px  
+    
+    h1
+        font-size: 60px
+        font-weight: 700
+        line-height: 90px
+        margin-top: 0 
+
+    p
+        font-size: 20px
+        line-height: 18px
+
+    a
+        background: $black
+        width: 180px
+        border-radius: 2px
+        height: 57px
+        margin: 50px auto
+        color: $white
+        font-size: 14px
+        font-weight: 700
+        word-spacing: 5px
+        display: block
+        line-height: 57px
+        text-decoration: none
+        &:hover
+            background-color: $green
+            transition: .6s
+
+.animal       
+    text-align: right
+
+    a
+        float: right
+        margin: 50px 0
+        text-align: center
+
+.tree
+    text-align: left
+
+    a
+        float: left
+        margin: 50px 0
+        text-align: center
+
+.object
+    background: #24842c
+
+    img
+        opacity: 0.8
+
+.robot-font
+    font-family: $robot
+    font-size: 36px
+    font-weight: bold
+    text-transform: uppercase
+    margin-bottom: 30px
+
+.welcome 
+    text-align: center
+    
+    h3
+        @extend .robot-font
+    
+    p
+        font-size: 16px
+
+.services
+    text-align: center
+    margin-top: 50px
+
+    .fa
+        border: 2px solid $elephant
+        width: 120px
+        height: 120px
+        border-radius: 50%
+        line-height: 120px
+        color: $elephant
+
+    .fa-tencent-weibo
+        font-size: 48px
+        font-weight: bold
+
+    .fa-recycle
+        font-size: 45px
+        font-weight: bold
+
+    .fa-tint
+        font-size: 51px
+        font-weight: bold
+
+    .fa-book
+        font-size: 46px
+        font-weight: bold
+    
+    h4
+        font-family: $robot
+        font-weight: bold
+        font-size: 18px
+        text-transform: uppercase
+        padding: 20px 0 10px
+    
+    p
+        padding: 0 5px 
+    
+    .serv-back:hover .fa-tencent-weibo,
+    .serv-back:hover .fa-recycle,
+    .serv-back:hover .fa-tint,
+    .serv-back:hover .fa-book
+        background-color: $green
+        color: $white
+        border: $green
+        transition: .6s
+
+    .serv-back:hover 
+        h4
+            color: $green
+            transition: .6s
+
+.a-style
+    text-decoration: none
+    text-align: center
+    text-transform: uppercase
+    border-radius: 2px
+
+.volunteer 
+    background: $black
+    height: 300px
+    
+    h3
+        font-size: 45px
+        font-family: $opens
+        font-weight: bold
+        color: $white
+        text-transform: uppercase
+        margin: 100px auto 20px
+
+        .volunt
+            color: $green
+
+    p
+        color: $white
+        font-size: 16px
+
+    a 
+        width: 200px
+        height: 50px
+        background: $green
+        color: $white
+        display: block
+        margin-top: 136px
+        font-size: 18px
+        font-weight: bold
+        line-height: 50px
+        @extend .a-style
+    
+    .join
+        &:hover
+            color: $black
+            background: $white
+            transition: .6s
+        
+.gallery
+    text-align: center
+    
+    .gall-left
+        padding: 0 0 0 15px
+
+    .gall-right
+        padding: 0 15px 0 0
+
+    .gall-row
+        margin: 0
+        &:first-child
+            margin-bottom: 10px
+
+    .pic
+        padding: 0
+        padding-right: 10px
+        overflow: hidden
+
+    h3
+        @extend .robot-font    
+    
+    p
+        font-size: 16px
+    
+    .buttons
+        margin-bottom: 15px
+
+        a
+            font-size: 14px
+            min-width: 100px
+            height: 45px
+            line-height: 45px
+            display: inline-block
+            padding: 0 30px
+            background: $touch
+            color: $but-col
+            margin: 50px 5px 30px
+            @extend .a-style
+            &:hover
+                color: $white
+                background: $green
+                font-weight: bold
+                transition: .6s
+
+.achievement
+    text-align: center
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/tree.jpg)
+    background-position: center
+    background-size: cover
+    color: $white
+    height: 567px
+
+    h3
+        @extend .robot-font 
+    
+    p
+        font-size: 16px
+        padding-bottom: 50px
+
+    .icons
+        h2
+            font-size: 36px
+            font-weight: bold
+            font-family: $robot
+
+        hr 
+            margin: 20px 80px
+
+        .fa-tree
+            font-size: 78px
+            color: $green
+
+        .fa-leanpub
+            font-size: 80px
+            color: $green
+        
+        .fa-paw
+            font-size: 80px
+            color: $green
+
+        .fa-bolt
+            font-size: 81px
+            color: $green
+
+        .fa-cloud
+            font-size: 81px
+            color: $green
+        
+        .desc1
+            text-transform: uppercase
+            font-size: 18px
+            font-family: $robot
+    
+.h4-style
+    font-size: 18px
+    font-weight: 700
+    font-family: $robot
+
+.event
+
+    .row
+        margin: 0
+
+    h3
+        @extend .robot-font 
+        text-align: center
+
+    .desc2
+        font-size: 16px
+        padding-bottom: 60px
+        text-align: center
+    
+    .event-img1
+        padding: 0
+
+    .event-img2
+        background-color: $touch
+        padding: 0 26px
+
+        h4
+            @extend .h4-style
+            margin-top: 30px
+        
+        .date
+            margin-bottom: 18px
+        
+        a 
+            color: $white
+            font-size: 12px
+            font-weight: 700
+            line-height: 40px
+            word-spacing: 3px
+            display: block
+            width: 129px
+            height: 40px
+            background: $black
+            margin: 26px auto
+            @extend .a-style
+            &:hover
+                color: $white
+                background: $green
+                transition: .6s
+
+    .event-img1,
+    .event-img2
+        max-width: 380px
+        height: 295px
+        text-align: center
+        overflow: hidden
+
+        img
+            width: 380px
+            height: 295px
+            clear: both
+    
+    .event-img3
+        width: 95px
+        height: 90px
+        margin-bottom: 35px
+        padding: 0
+        &:hover
+            opacity: 0.7
+            transition: .6s
+        &:last-child
+            margin-bottom: 0
+
+        img
+            width: 95px
+            height: 90px
+
+    .ev-head
+        padding-right: 0px
+
+        h4
+            @extend .h4-style
+
+.testimonials
+    background: $black
+    margin-top: 100px
+    text-align: center
+    color: $white
+    height: 682px
+
+    h3
+        @extend .robot-font 
+    
+    p
+        font-size: 16px
+        padding-bottom: 30px
+    
+    .reference
+        margin-top: 50px
+        height: 410px
+
+        h4
+            font-size: 15px
+            padding-top: 15px
+    
+        .company
+            color: $green
+            font-size: 15px
+
+        .test-desc
+            width: 570px
+            height: 190px
+            background: $white
+            margin: 15px
+            color: $black
+
+            i.fa
+                font-size: 24px
+                font-weight: bold
+                color: $green
+                position: absolute
+                top: 82px
+                left: 45px
+
+            p
+                padding: 68px 19px 55px 65px
+                font-style: italic
+
+        .test1
+            position: relative
+
+        .test-img
+            img
+                width: 105px
+                height: 105px
+                border-radius: 50%
+                position: absolute
+                top: -40px
+                left: 245px
+
+.blog
+    h3
+        @extend .robot-font 
+        text-align: center
+
+    .desc3
+        font-size: 16px
+        padding-bottom: 60px
+        text-align: center
+    
+    .box
+        border: 1px solid $elephant
+        height: 558px
+        overflow: hidden
+        &:last-child
+            margin-right: 0
+    
+        img
+            width: 375px
+            height: 245px
+        
+        .article
+            padding: 21px
+
+            h4
+                font-size: 20px
+                font-family: $robot
+                margin-bottom: 20px
+
+            .article-info
+                margin: 0 0 30px 0
+                color: $elephant
+                height: 20px
+                
+                p 
+                    font-size: 13px
+                    display: inline
+                    
+                i
+                    display: inline
+
+                .author,
+                .comments
+                    padding: 0
+
+            .separator
+                color: $elephant
+
+
+            .comments
+                float: right
+                text-align: right
+
+            a 
+                text-decoration: none
+                text-transform: uppercase
+                font-family: $robot
+                font-weight: bold
+                color: $black
+                display: block
+                margin-top: 20px
+                &:hover
+                    color: $green
+                    transition: .6s
+
+.help
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/forest.jpeg)
+    background-position: center
+    background-size: cover
+    color: $white
+    height: 200px
+
+    h3
+        @extend .robot-font 
+        float: left
+        margin-top: 76px
+
+    a 
+        width: 211px
+        height: 47px
+        display: block
+        background: $green
+        color: $white
+        line-height: 47px
+        float: right
+        font-weight: bold
+        font-family: $robot
+        font-size: 18px
+        margin-right: 0
+        margin-top: 76px
+        @extend .a-style
+        &:hover
+            background: $white
+            color: $black
+            transition: .6s
+
+.sponsor
+    height: 200px
+
+.office
+    height: 850px
+    background: $touch
+
+    h3
+        @extend .robot-font 
+        text-align: center
+
+    .desc4
+        font-size: 16px
+        padding-bottom: 60px
+        text-align: center
+    
+    h4
+        font-family: $robot
+        font-size: 22px
+        font-weight: bold
+        text-transform: uppercase
+        margin-bottom: 30px
+
+    .info
+        .fa-map-marker
+            font-size: 22px
+            margin-right: 13px
+        
+        .fa-mobile
+
+            font-size: 23px
+            margin-right: 13px
+
+        .fa-envelope
+            font-size: 14px
+            margin-right: 13px
+
+        img
+            width: 100%
+            margin-top: 45px
+            max-width: 550px
+            max-height: 300px
+    
+    .mes-style
+        background: $input
+        border: 0
+        color: $colin
+
+    .message
+        input
+            width: 280px
+            height: 50px
+            padding-left: 19px
+            margin-bottom: 20px
+            @extend .mes-style
+            &:first-child
+                margin-right: 6px
+        
+        .title
+            width: 570px
+
+        .mess
+            width: 570px
+            height: 219px
+            padding: 19px
+            @extend .mes-style
+
+        .send
+            margin-top: 27px
+            border-radius: 2px
+            border: 0
+            background: $black
+            color: $white
+            width: 200px
+            font-family: $robot
+            text-transform: uppercase
+            font-weight: bold
+            &:hover
+                background: $green
+                transition: .6s
+
+footer
+    height: 90px
+    background: $black
+    
+    .sagorika
+        float: right
+        line-height: 90px
+        color: $white
+    
+    .justa
+        float: left
+        line-height: 90px
+        color: $white
+
+    p
+        margin: 0
+
+.scroll
+    font-size: 40px
+    bottom: 80px
+    color: $input
+    display: none
+    padding: 10px
+    position: fixed
+    right: 50px
+    text-align: center
+    &:hover
+        color: $green
