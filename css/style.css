@@ -596,6 +596,9 @@ nav {
       background: #43a906;
       transition: .6s; }
 
+*:focus {
+  outline: 0; }
+
 footer {
   height: 90px;
   background: #222; }
